@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+<meta charset="UTF-8">
+<title>ریاضی‌یار نهم</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:tahoma;
+    background:linear-gradient(135deg,#16222a,#3a6073);
+}
+
+.box{
+    background:white;
+    width:85%;
+    max-width:600px;
+    margin:60px auto;
+    padding:35px;
+    border-radius:30px;
+    text-align:center;
+    box-shadow:0 10px 30px #0005;
+}
+
+.logo{
+    font-size:90px;
+}
+
+h1{
+    color:#16222a;
+}
+
+p{
+    font-size:18px;
+    line-height:2;
+}
+
+button{
+    background:#16222a;
+    color:white;
+    border:0;
+    padding:14px 40px;
+    border-radius:15px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+
+#chapters{
+    display:none;
+    width:90%;
+    margin:auto;
+}
+
+
+.title{
+    color:white;
+    text-align:center;
+}
+
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    text-align:center;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="box" id="home">
+
+<div class="logo">📘</div>
+
+<h1>ریاضی‌یار نهم</h1>
+
+<p>
+به وب آموزشی ریاضی نهم خوش آمدید.
+<br>
+یادگیری فصل‌ها همراه با آزمون چهارگزینه‌ای
+</p>
+
+<button onclick="start()">
+شروع
+</button>
+
+</div>
+
+
+
+<div id="chapters">
+
+<h1 class="title">
+📚 فصل‌های ریاضی نهم
+</h1>
+
+
+<div class="cards">
+
+
+<div class="card">
+<h2>فصل اول</h2>
+<p>مجموعه‌ها</p>
+<button onclick="showChapter(1)">ورود</button>
+</div>
+
+
+<div class="card">
+<h2>فصل دوم</h2>
+<p>عددهای حقیقی</p>
+<button onclick="showChapter(2)">ورود</button>
+</div>
+
+
+<div class="card">
+<h2>فصل سوم</h2>
+<p>استدلال و اثبات در هندسه</p>
+<button onclick="showChapter(3)">ورود</button>
+</div>
+
+
+<div class="card">
+<h2>فصل چهارم</h2>
+<p>توان و ریشه</p>
+<button onclick="showChapter(4)">ورود</button>
+</div>
+
+
+<div class="card">
+<h2>فصل پنجم</h2>
+<p>عبارت‌های جبری</p>
+<button onclick="showChapter(5)">ورود</button>
+</div>
+
+
+<div class="card">
+<h2>فصل ششم</h2>
+<p>خط و معادله‌های خطی</p>
+<button onclick="showChapter(6)">ورود</button>
+</div>
+
+
+<div class="card">
+<h2>فصل هفتم</h2>
+<p>عبارت‌های گویا</p>
+<button onclick="showChapter(7)">ورود</button>
+</div>
+
+
+<div class="card">
+<h2>فصل هشتم</h2>
+<p>حجم و مساحت</p>
+<button onclick="showChapter(8)">ورود</button>
+</div>
+
+
+</div>
+
+</div>
+
+
+
+<script>
+
+function start(){
+
+document.getElementById("home").style.display="none";
+
+document.getElementById("chapters").style.display="block";
+
+}
+
+
+function showChapter(n){
+
+document.getElementById("chapters").style.display="none";
+
+document.getElementById("chapter"+n).style.display="block";
+
+}
+
+</script>
+
+
+</body>
+</html><!-- فصل اول -->
+
+<div id="chapter1" class="box" style="display:none">
+
+<h1>فصل اول: مجموعه‌ها</h1>
+
+<p>
+مجموعه، گروهی از اشیای مشخص است. در این فصل با عضو مجموعه،
+اجتماع و اشتراک آشنا می‌شویم.
+</p>
+
+<h2>آزمون فصل اول</h2>
+
+<p>۱) مجموعه چیست؟</p>
+<input type="radio" name="q1" value="1"> گروهی از اعضای مشخص<br>
+<input type="radio" name="q1" value="0"> یک عدد<br>
+<input type="radio" name="q1" value="0"> یک شکل<br>
+
+<p>۲) نماد عضو بودن چیست؟</p>
+<input type="radio" name="q2" value="1"> ∈<br>
+<input type="radio" name="q2" value="0"> +<br>
+
+<p>۳) اشتراک دو مجموعه یعنی؟</p>
+<input type="radio" name="q3" value="1"> اعضای مشترک<br>
+<input type="radio" name="q3" value="0"> همه اعضا<br>
+
+<p>۴) مجموعه تهی چند عضو دارد؟</p>
+<input type="radio" name="q4" value="1"> صفر<br>
+<input type="radio" name="q4" value="0"> یک<br>
+
+<p>۵) اجتماع شامل چیست؟</p>
+<input type="radio" name="q5" value="1"> همه اعضای دو مجموعه<br>
+<input type="radio" name="q5" value="0"> فقط اعضای مشترک<br>
+
+<br>
+<button onclick="check(1)">بررسی جواب‌ها</button>
+
+<h2 id="result1"></h2>
+
+</div>
+
+
+
+<!-- فصل دوم -->
+
+<div id="chapter2" class="box" style="display:none">
+
+<h1>فصل دوم: عددهای حقیقی</h1>
+
+<p>
+در این فصل عددهای گویا، گنگ و نمایش عددها روی محور را یاد می‌گیریم.
+</p>
+
+<h2>آزمون فصل دوم</h2>
+
+<p>۱) عددهای حقیقی شامل چه هستند؟</p>
+<input type="radio" name="q6" value="1"> گویا و گنگ<br>
+<input type="radio" name="q6" value="0"> فقط طبیعی<br>
+
+<p>۲) √۲ چه نوع عددی است؟</p>
+<input type="radio" name="q7" value="1"> گنگ<br>
+<input type="radio" name="q7" value="0"> طبیعی<br>
+
+<p>۳) ۲/۵ چه نوع عددی است؟</p>
+<input type="radio" name="q8" value="1"> گویا<br>
+<input type="radio" name="q8" value="0"> گنگ<br>
+
+<p>۴) عدد π تقریبا چه نوع عددی است؟</p>
+<input type="radio" name="q9" value="1"> گنگ<br>
+<input type="radio" name="q9" value="0"> صحیح<br>
+
+<p>۵) محور اعداد برای چیست؟</p>
+<input type="radio" name="q10" value="1"> نمایش عددها<br>
+<input type="radio" name="q10" value="0"> رسم شکل<br>
+
+<br>
+<button onclick="check(2)">بررسی جواب‌ها</button>
+
+<h2 id="result2"></h2>
+
+</div>
+
+
+
+<!-- فصل سوم -->
+
+<div id="chapter3" class="box" style="display:none">
+
+<h1>فصل سوم: استدلال و اثبات در هندسه</h1>
+
+<p>
+در این فصل یاد می‌گیریم برای درست بودن یک نتیجه در هندسه دلیل بیاوریم.
+</p>
+
+<h2>آزمون فصل سوم</h2>
+
+<p>۱) زاویه قائمه چند درجه است؟</p>
+<input type="radio" name="q11" value="1">۹۰ درجه<br>
+<input type="radio" name="q11" value="0">۱۸۰ درجه<br>
+
+<p>۲) مثلث چند ضلع دارد؟</p>
+<input type="radio" name="q12" value="1">۳ ضلع<br>
+<input type="radio" name="q12" value="0">۴ ضلع<br>
+
+<p>۳) مجموع زاویه‌های مثلث؟</p>
+<input type="radio" name="q13" value="1">۱۸۰ درجه<br>
+<input type="radio" name="q13" value="0">۳۶۰ درجه<br>
+
+<p>۴) اثبات یعنی؟</p>
+<input type="radio" name="q14" value="1">نشان دادن درست بودن<br>
+<input type="radio" name="q14" value="0">حدس زدن<br>
+
+<p>۵) هندسه درباره چیست؟</p>
+<input type="radio" name="q15" value="1">شکل‌ها و اندازه‌ها<br>
+<input type="radio" name="q15" value="0">فقط عددها<br>
+
+<br>
+<button onclick="check(3)">بررسی جواب‌ها</button>
+
+<h2 id="result3"></h2>
+
+</div>
+
+
+
+<!-- فصل چهارم -->
+
+<div id="chapter4" class="box" style="display:none">
+
+<h1>فصل چهارم: توان و ریشه</h1>
+
+<p>
+در این فصل با قوانین توان‌ها و ریشه‌گیری آشنا می‌شویم.
+</p>
+
+<h2>آزمون فصل چهارم</h2>
+
+<p>۱) ۲³ برابر است با؟</p>
+<input type="radio" name="q16" value="1">۸<br>
+<input type="radio" name="q16" value="0">۶<br>
+
+<p>۲) √۹ چند است؟</p>
+<input type="radio" name="q17" value="1">۳<br>
+<input type="radio" name="q17" value="0">۹<br>
+
+<p>۳) توان نشان‌دهنده چیست؟</p>
+<input type="radio" name="q18" value="1">تکرار ضرب<br>
+<input type="radio" name="q18" value="0">جمع<br>
+
+<p>۴) √۱۶ چند است؟</p>
+<input type="radio" name="q19" value="1">۴<br>
+<input type="radio" name="q19" value="0">۸<br>
+
+<p>۵) عدد به توان صفر؟</p>
+<input type="radio" name="q20" value="1">۱<br>
+<input type="radio" name="q20" value="0">۰<br>
+
+<br>
+<button onclick="check(4)">بررسی جواب‌ها</button>
+
+<h2 id="result4"></h2>
+
+</div><!-- فصل پنجم -->
+
+<div id="chapter5" class="box" style="display:none">
+
+<h1>فصل پنجم: عبارت‌های جبری</h1>
+
+<p>
+در این فصل با عبارت‌های جبری، متغیرها و ساده کردن عبارت‌ها آشنا می‌شویم.
+</p>
+
+<h2>آزمون فصل پنجم</h2>
+
+<p>۱) متغیر چیست؟</p>
+<input type="radio" name="q21" value="1">حرفی که مقدار دارد<br>
+<input type="radio" name="q21" value="0">یک شکل<br>
+
+<p>۲) عبارت جبری شامل چیست؟</p>
+<input type="radio" name="q22" value="1">عدد و متغیر<br>
+<input type="radio" name="q22" value="0">فقط عدد<br>
+
+<p>۳) ساده کردن عبارت یعنی؟</p>
+<input type="radio" name="q23" value="1">کوتاه‌تر کردن عبارت<br>
+<input type="radio" name="q23" value="0">بزرگ‌تر کردن عدد<br>
+
+<p>۴) ضریب یعنی؟</p>
+<input type="radio" name="q24" value="1">عدد کنار متغیر<br>
+<input type="radio" name="q24" value="0">علامت مساوی<br>
+
+<p>۵) ۲x یعنی؟</p>
+<input type="radio" name="q25" value="1">دو برابر x<br>
+<input type="radio" name="q25" value="0">x+2<br>
+
+<br>
+<button onclick="check(5)">بررسی جواب‌ها</button>
+<h2 id="result5"></h2>
+
+</div>
+
+
+
+<!-- فصل ششم -->
+
+<div id="chapter6" class="box" style="display:none">
+
+<h1>فصل ششم: خط و معادله‌های خطی</h1>
+
+<p>
+در این فصل با معادله خط، شیب و حل معادله‌های خطی آشنا می‌شویم.
+</p>
+
+<h2>آزمون فصل ششم</h2>
+
+<p>۱) جواب معادله چیست؟</p>
+<input type="radio" name="q26" value="1">عددی که معادله را درست کند<br>
+<input type="radio" name="q26" value="0">هر عددی<br>
+
+<p>۲) خط از چند نقطه تشکیل می‌شود؟</p>
+<input type="radio" name="q27" value="1">بی‌نهایت نقطه<br>
+<input type="radio" name="q27" value="0">یک نقطه<br>
+
+<p>۳) شیب خط نشان‌دهنده چیست؟</p>
+<input type="radio" name="q28" value="1">تغییرات خط<br>
+<input type="radio" name="q28" value="0">رنگ خط<br>
+
+<p>۴) معادله یعنی؟</p>
+<input type="radio" name="q29" value="1">تساوی دارای مجهول<br>
+<input type="radio" name="q29" value="0">یک شکل<br>
+
+<p>۵) x+2=5 جوابش؟</p>
+<input type="radio" name="q30" value="1">۳<br>
+<input type="radio" name="q30" value="0">۷<br>
+
+<br>
+<button onclick="check(6)">بررسی جواب‌ها</button>
+<h2 id="result6"></h2>
+
+</div>
+
+
+
+<!-- فصل هفتم -->
+
+<div id="chapter7" class="box" style="display:none">
+
+<h1>فصل هفتم: عبارت‌های گویا</h1>
+
+<p>
+در این فصل با کسرهای جبری و ساده کردن آن‌ها آشنا می‌شویم.
+</p>
+
+<h2>آزمون فصل هفتم</h2>
+
+<p>۱) عبارت گویا چیست؟</p>
+<input type="radio" name="q31" value="1">عبارت دارای کسر جبری<br>
+<input type="radio" name="q31" value="0">عدد ساده<br>
+
+<p>۲) مخرج کسر نباید چه باشد؟</p>
+<input type="radio" name="q32" value="1">صفر<br>
+<input type="radio" name="q32" value="0">یک<br>
+
+<p>۳) ساده کردن کسر یعنی؟</p>
+<input type="radio" name="q33" value="1">کم کردن عوامل مشترک<br>
+<input type="radio" name="q33" value="0">جمع کردن<br>
+
+<p>۴) کسر شامل چه چیزهایی است؟</p>
+<input type="radio" name="q34" value="1">صورت و مخرج<br>
+<input type="radio" name="q34" value="0">فقط عدد<br>
+
+<p>۵) تقسیم بر صفر؟</p>
+<input type="radio" name="q35" value="1">تعریف نشده است<br>
+<input type="radio" name="q35" value="0">برابر یک است<br>
+
+<br>
+<button onclick="check(7)">بررسی جواب‌ها</button>
+<h2 id="result7"></h2>
+
+</div>
+
+
+
+<!-- فصل هشتم -->
+
+<div id="chapter8" class="box" style="display:none">
+
+<h1>فصل هشتم: حجم و مساحت</h1>
+
+<p>
+در این فصل با محاسبه حجم و مساحت شکل‌های هندسی و فضایی آشنا می‌شویم.
+</p>
+
+<h2>آزمون فصل هشتم</h2>
+
+<p>۱) مساحت یعنی؟</p>
+<input type="radio" name="q36" value="1">اندازه سطح شکل<br>
+<input type="radio" name="q36" value="0">اندازه زمان<br>
+
+<p>۲) حجم یعنی؟</p>
+<input type="radio" name="q37" value="1">فضای اشغال شده<br>
+<input type="radio" name="q37" value="0">طول خط<br>
+
+<p>۳) واحد حجم چیست؟</p>
+<input type="radio" name="q38" value="1">متر مکعب<br>
+<input type="radio" name="q38" value="0">متر<br>
+
+<p>۴) مساحت مربع؟</p>
+<input type="radio" name="q39" value="1">ضلع × ضلع<br>
+<input type="radio" name="q39" value="0">ضلع + ضلع<br>
+
+<p>۵) شکل سه‌بعدی چه دارد؟</p>
+<input type="radio" name="q40" value="1">حجم<br>
+<input type="radio" name="q40" value="0">فقط خط<br>
+
+<br>
+<button onclick="check(8)">بررسی جواب‌ها</button>
+<h2 id="result8"></h2>
+
+</div>
+
+
+
+<script>
+
+function check(ch){
+
+let start=(ch-1)*5+1;
+let score=0;
+
+for(let i=start;i<start+5;i++){
+
+let answer=document.querySelector(
+'input[name="q'+i+'"]:checked'
+);
+
+if(answer && answer.value=="1"){
+score++;
+}
+
+}
+
+document.getElementById("result"+ch).innerHTML=
+"نتیجه: "+score+" از ۵ پاسخ درست است";
+
+}
+
+</script>
